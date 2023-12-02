@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div src="" class="logo">Light</div>
+    <div class="menu">
+      <button onclick="myFunction()" class="dropbtn__1">Настройки</button>
+      <div id="myDropdown__1" class="dropdown-content__1">
+        <div class="menu__item">
+          <a href="menu.html" class="menu__item__link">Меню</a>
+        </div>
+        <div class="menu__item">
+          <a href="information.html" class="menu__item__link">Информация о</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <button onclick="myFunction()" class="dropbtn">Меню</button>
+      <div id="myDropdown" class="dropdown-content">
+        <div class="menu__item">
+          <a href="#" class="menu__item__link">Главная</a>
+        </div>
+        <div class="menu__item">
+          <a href="#catalog" class="menu__item__link">Каталог</a>
+        </div>
+        <div class="menu__item">
+          <a href="#contact" class="menu__item__link">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="greeting">
+      <div class="greeting__title">Добро пожаловать!</div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="card__list">
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-1">html</label>
+              <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-2">css</label>
+              <div class="tab-content" id="content-1">
+                &ltbutton>Кнопка&lt/button>
+              </div>
+              <div class="tab-content" id="content-2">
+               <pre>button:hover {
+  --_p: 100%;
+  transition: background-position 0.4s, background-size 0s;
+}
+
+button:active {
+  box-shadow: 0 0 9e9Q inset #0009;
+  background-color: var(--c);
+  color: #ffffff;
+}
+
+button {
+  font-family: system-ui, sans-serif;
+  font-size: 3.5rem;
+  cursor: pointer;
+  padding: 0.1em 0.6em;
+  font-weight: bold;
+  margin: 15px 2px;
+  border: none;
+}</pre>
+              </div>
+            </div>
+          </div>
+          <button id="b1">Кнопка</button>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-3" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-3">html</label>
+              <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-4">css</label>
+              <div class="tab-content" id="content-3">
+                &ltbutton>Кнопка&lt/button>
+              </div>
+              <div class="tab-content" id="content-4">
+               <pre>button {
+  text-decoration: none;
+  color: rgb(31, 32, 33);
+  background-color: #e5e5e5;
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 15px 2px;
+}
+
+button:hover {
+  background-color: #1f1d1d;
+  color: rgb(255, 255, 255);
+}</pre>
+              </div>
+            </div>
+          </div>
+          <button id="b2">Кнопка</button>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-5" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-5">html</label>
+              <input id="tab-btn-6" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-6">css</label>
+              <div class="tab-content" id="content-5">
+                &ltbutton>Кнопка&lt/button>
+              </div>
+              <div class="tab-content" id="content-6">
+               <pre>button {
+  text-decoration: none;
+  color: rgb(226, 234, 241);
+  background-color: rgb(65, 62, 66);
+  padding: 10px 20px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  margin: 15px 2px;
+}
+
+button:active {
+  color: rgb(38, 38, 38);
+  background-color: #efe4e4;
+} </pre>
+              </div>
+            </div>
+          </div>
+          <button id="b3">Lorem</button>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-7" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-7">html</label>
+              <input id="tab-btn-8" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-8">css</label>
+              <div class="tab-content" id="content-7">
+                &ltbutton>Кнопка&lt/button>
+              </div>
+              <div class="tab-content" id="content-8">
+               <pre>button {
+  text-decoration: none;
+  color: rgb(226, 234, 241);
+  background-color: rgb(65, 62, 66);
+  padding: 10px 20px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  display: inline-block;
+  margin: 15px 2px;
+}
+
+button:active {
+  color: rgb(38, 38, 38);
+  background-color: #efe4e4;
+} </pre>
+              </div>
+            </div>
+          </div>
+          <button id="b4">Lorem</button>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-9" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-9">html</label>
+              <input id="tab-btn-10" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-10">css</label>
+              <div class="tab-content" id="content-9">
+                <pre>&ltdiv class="wrapper">
+  &lta href="#">&ltspan>Lorem&lt/span>&lt/a>
+&lt/div></pre>
+              </div>
+              <div class="tab-content" id="content-10">
+               <pre>a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(83, 18, 213);
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  margin: 15px 2px;
+}
+
+a span {
+  position: relative;
+  z-index: 2;
+}
+
+a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7920d1;
+  transition: all 0.35s;
+}
+
+a:hover {
+  color: #e9e0e0;
+}
+
+a:hover:after {
+  width: 100%;
+} </pre>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <a href="#" id="b6"><span>Lorem</span></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-11" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-11">html</label>
+              <input id="tab-btn-12" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-12">css</label>
+              <div class="tab-content" id="content-11">
+                <pre>&ltdiv class="wrapper">
+  &lta href="#">&ltspan>Кнопка&lt/span>&lt/a>
+&lt/div></pre>
+              </div>
+              <div class="tab-content" id="content-12">
+               <pre>a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(18, 167, 213);
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  margin: 15px 2px;
+}
+
+a span {
+  position: relative;
+  z-index: 2;
+}
+
+a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: rgb(32, 135, 209);
+  transition: all 0.35s;
+}
+
+a:hover {
+  color: #e9e0e0;
+}
+
+a:hover:after {
+  width: 100%;
+  height: 100%;
+} </pre>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <a href="#" id="b5"><span>Кнопка</span></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-13" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-13">html</label>
+              <input id="tab-btn-14" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-14">css</label>
+              <div class="tab-content" id="content-13">
+                &ltbutton class="button">Жми&lt/button>
+              </div>
+              <div class="tab-content" id="content-14">
+               <pre>.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+  
+.button:hover {background-color: #000022}
+  
+.button:active {
+  background-color: #1155cc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}</pre>
+              </div>
+            </div>
+          </div>
+          <button id="b7">Жми</button>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-15" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-15">html</label>
+              <input id="tab-btn-16" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-16">css</label>
+              <div class="tab-content" id="content-15">
+                &ltbutton>Green&lt/button>
+              </div>
+              <div class="tab-content" id="content-16">
+               <pre>button {
+  background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+               </pre>
+              </div>
+            </div>
+          </div>
+          <button id="b8">Green</button>
+        </div>
+        <div class="card">
+          <div class="card__descriptoin">
+            <div class="tab">
+              <input checked id="tab-btn-17" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-17">html</label>
+              <input id="tab-btn-18" name="tab-btn" type="radio" value="">
+              <label for="tab-btn-18">css</label>
+              <div class="tab-content" id="content-17">
+                <pre>&ltdiv class="wrapper">
+  &lta href="#">&ltspan>Lorem&lt/span>&lt/a>
+&lt/div></pre>
+              </div>
+              <div class="tab-content" id="content-18">
+               <pre>a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(167, 213, 18);
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  margin: 15px 2px;
+  border-radius: 10px;
+}
+
+a span {
+  position: relative;
+  z-index: 2;
+}
+
+a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #c3b15e;
+  transition: all 0.35s;
+  border-radius: 8px;
+}
+
+a:hover {
+  color: #e9e0e0;
+}
+
+a:hover:after {
+  height: 100%;
+}</pre>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <a href="#" id="b10"><span>Lorem</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="logo">Light</div>
+    <div class="footer__contact">адрес: ул. Пушкина, дом. Калатушкина</div>
+    <div class="footer__contact">номер: +79114816950</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

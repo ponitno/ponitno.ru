@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <body>
+        <header>
+          <div src="" class="logo">Light</div>
+          <div class="menu">
+            <button onclick="myFunction()" class="dropbtn__1">Настройки</button>
+            <div id="myDropdown__1" class="dropdown-content__1">
+              <div class="menu__item">
+                <a href="index.html" class="menu__item__link">Кнопки</a>
+              </div>
+              <div class="menu__item">
+                <a href="information.html" class="menu__item__link">Информация о</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu">
+            <button onclick="myFunction()" class="dropbtn">Меню</button>
+            <div id="myDropdown" class="dropdown-content">
+              <div class="menu__item">
+                <a href="#" class="menu__item__link">Главная</a>
+              </div>
+              <div class="menu__item">
+                <a href="#catalog" class="menu__item__link">Каталог</a>
+              </div>
+              <div class="menu__item">
+                <a href="#contact" class="menu__item__link">Контакты</a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="greeting">
+            <div class="greeting__title">Добро пожаловать!</div>
+          </section>
+          <section class="catalog" id="catalog">
+            <div class="card__list">
+              <div class="card">
+                <div class="card__descriptoin">
+                  <div class="tab">
+                    <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                    <label for="tab-btn-1">html</label>
+                    <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                    <label for="tab-btn-2">css</label>
+                    <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                    <label for="tab-btn-3">js</label>
+                    <div class="tab-content" id="content-1">
+                      <pre>&ltdiv class="menu">
+  &ltbutton onclick="myFunction()" class="dropbtn">Меню&lt/button>
+  &ltdiv id="myDropdown" class="dropdown-content">
+    &ltdiv class="menu__item">
+      &lta href="#" class="menu__item__link">1&lt/a>
+    &lt/div>
+    &ltdiv class="menu__item">
+      &lta href="#catalog" class="menu__item__link">2&lt/a>
+    &lt/div>
+    &ltdiv class="menu__item">
+      &lta href="#contact" class="menu__item__link">3&lt/a>
+    &lt/div>
+  &lt/div>
+&lt/div></pre>
+                    </div>
+                    <div class="tab-content" id="content-2">
+                      <pre>.menu {
+  display: flex;
+}
+
+.menu__item {
+  margin-left: 24px;
+}
+
+.menu__item__link {
+  color: rgb(253, 254, 255);
+  text-decoration: none;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu__item__link:hover {
+  color: black;
+  background-color: white;
+}
+
+.dropbtn {
+  color: rgb(253, 254, 255);
+  text-decoration: none;
+  background-color: #63a3d0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  color: black;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  height: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.show {
+  display: block;
+}</pre>
+                    </div>
+                    <div class="tab-content" id="content-3">
+                      <pre>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }</pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu">
+                  <button onclick="myFunction()" class="dropbtn__2">Меню</button>
+                  <div id="myDropdown__2" class="dropdown-content__2">
+                    <div class="menu__item">
+                      <a href="#" class="menu__item__link">1</a>
+                    </div>
+                    <div class="menu__item">
+                      <a href="#" class="menu__item__link">2</a>
+                    </div>
+                    <div class="menu__item">
+                      <a href="#" class="menu__item__link">3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__descriptoin">
+                  <div class="tab">
+                    <input checked id="tab-btn-4" name="tab-btn" type="radio" value="">
+                    <label for="tab-btn-4">html</label>
+                    <input id="tab-btn-5" name="tab-btn" type="radio" value="">
+                    <label for="tab-btn-5">css</label>
+                    <input id="tab-btn-6" name="tab-btn" type="radio" value="">
+                    <label for="tab-btn-6">js</label>
+                    <div class="tab-content" id="content-4">
+                      <pre>&ltdiv class="menu">
+  &ltbutton onclick="myFunction()" class="dropbtn">Меню&lt/button>
+  &ltdiv id="myDropdown" class="dropdown-content">
+    &ltdiv class="menu__item">
+      &lta href="#" class="menu__item__link">1&lt/a>
+    &lt/div>
+    &ltdiv class="menu__item">
+      &lta href="#catalog" class="menu__item__link">2&lt/a>
+    &lt/div>
+    &ltdiv class="menu__item">
+      &lta href="#contact" class="menu__item__link">3&lt/a>
+    &lt/div>
+  &lt/div>
+&lt/div></pre>
+                    </div>
+                    <div class="tab-content" id="content-5">
+                      <pre>.menu {
+  display: flex;
+}
+
+.menu__item {
+  margin-left: 24px;
+}
+
+.menu__item__link {
+  color: rgb(253, 254, 255);
+  text-decoration: none;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu__item__link:hover {
+  color: black;
+  background-color: white;
+}
+
+.dropbtn {
+  color: rgb(253, 254, 255);
+  text-decoration: none;
+  background-color: #63a3d0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  color: black;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  height: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.show {
+  display: block;
+}</pre>
+                    </div>
+                    <div class="tab-content" id="content-6">
+                      <pre>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }</pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu">
+                  <button onclick="myFunction()" class="dropbtn__3">Меню</button>
+                  <div id="myDropdown__3" class="dropdown-content__3">
+                    <div class="menu__item">
+                      <a href="#" class="menu__item__link">1</a>
+                    </div>
+                    <div class="menu__item">
+                      <a href="#" class="menu__item__link">2</a>
+                    </div>
+                    <div class="menu__item">
+                      <a href="#" class="menu__item__link">3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer id="contact">
+          <div class="logo">Light</div>
+          <div class="footer__contact">адрес: ул. Пушкина, дом. Калатушкина</div>
+          <div class="footer__contact">номер: +79114816950</div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
